@@ -12,7 +12,7 @@ depends=('pugixml')
 makedepends=('git' 'cmake' 'gcc')
 source=("${_pkgname}::git+https://github.com/hyprwm/hyprwayland-scanner.git")
 provides=("hyprwayland-scanner")
-conflicts=("hhyprwayland-scanner")
+conflicts=("hyprwayland-scanner")
 sha256sums=('SKIP')
 
 pkgver() {

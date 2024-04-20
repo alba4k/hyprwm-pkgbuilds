@@ -10,7 +10,7 @@ pkgbase = hyprwayland-scanner-git
 	makedepends = gcc
 	depends = pugixml
 	provides = hyprwayland-scanner
-	conflicts = hhyprwayland-scanner
+	conflicts = hyprwayland-scanner
 	source = hyprwayland-scanner::git+https://github.com/hyprwm/hyprwayland-scanner.git
 	sha256sums = SKIP
 
