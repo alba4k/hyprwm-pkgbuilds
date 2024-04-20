@@ -2,7 +2,7 @@
 
 _pkgname="hyprwayland-scanner"
 pkgname="${_pkgname}-git"
-pkgver=0.0.1.r17.eb11420
+pkgver=0.1.0.r1.geb11420c
 pkgrel=1
 pkgdesc="A Hyprland implementation of wayland-scanner, in and for C++. "
 arch=(any)
@@ -17,9 +17,8 @@ sha256sums=('SKIP')
 
 pkgver() {
 	cd ${_pkgname}
-    #git describe --long --tags --abbrev=8 --exclude='*[a-zA-Z][a-zA-Z]*' \
-    #  | sed -E 's/^[^0-9]*//;s/([^-]*-g)/r\1/;s/-/./g'
-	printf "0.0.1.r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+    git describe --long --tags --abbrev=8 --exclude='*[a-zA-Z][a-zA-Z]*' \
+      | sed -E 's/^[^0-9]*//;s/([^-]*-g)/r\1/;s/-/./g'
 }
 
 build() {
