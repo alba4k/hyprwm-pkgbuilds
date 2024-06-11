@@ -1,14 +1,14 @@
 # Maintainer: jlaunay
 _pkgname=hyprlang
 pkgname="${_pkgname}-git"
-pkgver=0.2.1.r6.d486806
+pkgver=0.5.2.r2.ec6938c
 pkgrel=1
 pkgdesc="hyprlang - the hypr configuration language"
 arch=('x86_64')
 url="https://github.com/hyprwm/hyprlang"
 license=("GPL")
 depends=('gcc-libs' 'glibc')
-makedepends=('git' 'cmake')
+makedepends=('git' 'cmake' 'hyprutils-git')
 provides=(
 	"$_pkgname=${pkgver%%.r*}"
 	"lib$_pkgname.so"
