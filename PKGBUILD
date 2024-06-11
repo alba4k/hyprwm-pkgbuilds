@@ -1,4 +1,4 @@
-# Maintainer: jlaunay
+# Maintainer: zjeffer
 _pkgname=hyprlang
 pkgname="${_pkgname}-git"
 pkgver=0.5.2.r2.ec6938c
