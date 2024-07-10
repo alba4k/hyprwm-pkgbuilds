@@ -1,0 +1,17 @@
+pkgbase = aquamarine-git
+	pkgdesc = Aquamarine is a very light linux rendering backend library
+	pkgver = 0.1.0_r104.g965f429
+	pkgrel = 1
+	url = https://github.com/hyprwm/aquamarine
+	arch = any
+	license = BSD-3-Clause
+	makedepends = git
+	makedepends = cmake
+	makedepends = gcc
+	depends = pugixml
+	provides = aquamarine
+	conflicts = aquamarine
+	source = aquamarine::git+https://github.com/hyprwm/aquamarine.git
+	sha256sums = SKIP
+
+pkgname = aquamarine-git
