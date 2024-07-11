@@ -22,14 +22,14 @@ pkgver() {
 }
 
 build() {
-	cd "${srcdir}/${_pkgname}"
-    cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build
-    cmake --build ./build --config Release --target all -j`nproc 2>/dev/null || getconf _NPROCESSORS_CONF`
+  cd "${srcdir}/${_pkgname}"
+  cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build
+  cmake --build ./build --config Release --target all -j$(nproc 2>/dev/null || getconf _NPROCESSORS_CONF)
 }
 
 package() {
-	cd "${srcdir}/${_pkgname}"
-	DESTDIR="${pkgdir}" cmake --install build
+  cd "${srcdir}/${_pkgname}"
+  DESTDIR="${pkgdir}" cmake --install build
 
-	install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
 }
