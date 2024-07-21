@@ -2,14 +2,14 @@
 
 _pkgname="aquamarine"
 pkgname="${_pkgname}-git"
-pkgver=0.1.0_r104.g965f429
+pkgver=0.1.0_r147.g7a84686
 pkgrel=1
 pkgdesc="Aquamarine is a very light linux rendering backend library "
 arch=(any)
 url="https://github.com/hyprwm/aquamarine"
 license=('BSD-3-Clause')
 depends=('pugixml')
-makedepends=('git' 'cmake' 'gcc')
+makedepends=('git' 'cmake' 'gcc' 'hyprwayland-scanner-git')
 source=("${_pkgname}::git+https://github.com/hyprwm/aquamarine.git")
 provides=("aquamarine")
 conflicts=("aquamarine")
@@ -17,7 +17,7 @@ sha256sums=('SKIP')
 
 pkgver() {
   cd ${_pkgname}
-  _ver="$(grep -m1 'set(AQUAMARINE_VERSION' CMakeLists.txt | cut -d '"' -f2 | tr - .)"
+  _ver="$(cat VERSION)"
   echo "${_ver}_r$(git rev-list --count HEAD).g$(git rev-parse --short HEAD)"
 }
 
