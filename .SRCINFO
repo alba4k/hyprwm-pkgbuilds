@@ -9,7 +9,7 @@ pkgbase = hyprcursor-git
 	makedepends = cmake
 	makedepends = gcc
 	makedepends = gdb
-	depends = hyprlang>=0.4.2
+	depends = hyprlang-git
 	depends = cairo
 	depends = libzip
 	depends = librsvg

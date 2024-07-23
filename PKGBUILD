@@ -8,7 +8,7 @@ pkgdesc="The hyprland cursor format, library and utilities"
 arch=(any)
 url="https://github.com/hyprwm/hyprcursor"
 license=('BSD-3-Clause')
-depends=('hyprlang>=0.4.2' 'cairo' 'libzip' 'librsvg' 'tomlplusplus')
+depends=('hyprlang-git' 'cairo' 'libzip' 'librsvg' 'tomlplusplus')
 makedepends=('git' 'cmake' 'gcc' 'gdb')
 source=("${_pkgname}::git+https://github.com/hyprwm/hyprcursor.git")
 conflicts=("${_pkgname}")
