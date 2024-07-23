@@ -12,7 +12,7 @@ depends=('hyprlang-git' 'cairo' 'libzip' 'librsvg' 'tomlplusplus')
 makedepends=('git' 'cmake' 'gcc' 'gdb')
 source=("${_pkgname}::git+https://github.com/hyprwm/hyprcursor.git")
 conflicts=("${_pkgname}")
-provides=("${_pkgname}=$pkgver" "lib$_pkgname.so")
+provides=("${_pkgname}=${pkgver%%.r*}" "lib$_pkgname.so")
 sha256sums=('SKIP')
 
 pkgver() {

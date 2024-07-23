@@ -14,7 +14,7 @@ pkgbase = hyprcursor-git
 	depends = libzip
 	depends = librsvg
 	depends = tomlplusplus
-	provides = hyprcursor=0.1.8.r0.gcab47461
+	provides = hyprcursor=0.1.8
 	provides = libhyprcursor.so
 	conflicts = hyprcursor
 	source = hyprcursor::git+https://github.com/hyprwm/hyprcursor.git
