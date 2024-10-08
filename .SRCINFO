@@ -10,6 +10,7 @@ pkgbase = hyprsunset-git
 	makedepends = gcc
 	makedepends = gdb
 	depends = wayland
+	depends = hyprland-protocols-git
 	depends = hyprutils-git>=0.2.3
 	depends = hyprwayland-scanner-git>=0.4.0
 	depends = wayland-protocols
