@@ -8,8 +8,8 @@ pkgdesc="An application to enable a blue-light filter on Hyprland"
 arch=(any)
 url="https://github.com/hyprwm/hyprsunset"
 license=('BSD-3-Clause')
-depends=('wayland' 'hyprland-protocols-git' 'hyprutils-git>=0.2.3' 'hyprwayland-scanner-git>=0.4.0' 'wayland-protocols')
-makedepends=('git' 'cmake' 'gcc' 'gdb')
+depends=('wayland' 'hyprutils-git>=0.2.3' 'wayland-protocols')
+makedepends=('git' 'cmake' 'gcc' 'gdb' 'hyprland-protocols-git' 'hyprwayland-scanner-git>=0.4.0')
 source=("${_pkgname}::git+https://github.com/hyprwm/hyprsunset.git")
 provides=("hyprsunset")
 conflicts=("hyprsunset")
