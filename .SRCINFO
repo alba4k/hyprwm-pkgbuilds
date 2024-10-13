@@ -10,7 +10,7 @@ pkgbase = hyprsysteminfo-git
 	makedepends = gcc
 	makedepends = gdb
 	depends = hyprutils-git>=0.2.3
-	depends = qt6-base
+	depends = qqc2-desktop-style
 	provides = hyprsysteminfo
 	conflicts = hyprsysteminfo
 	source = hyprsysteminfo::git+https://github.com/hyprwm/hyprsysteminfo.git

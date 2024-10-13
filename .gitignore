@@ -1,3 +1,4 @@
-hyprsysteminfo*
-pkg
-src
+/*
+!/.gitignore
+!/.SRCINFO
+!/PKGBUILD
