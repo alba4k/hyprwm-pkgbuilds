@@ -1,5 +1,5 @@
 pkgbase = hyprpolkitagent-git
-	pkgdesc = A tiny qt6/qml application to display information about the running system
+	pkgdesc = A polkit authentication agent written in QT/QML
 	pkgver = 0.1.0.r0.g12f06d80
 	pkgrel = 1
 	url = https://github.com/hyprwm/hyprpolkitagent
