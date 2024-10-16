@@ -23,7 +23,7 @@ pkgver() {
 
 build() {
 	cd "${srcdir}/${_pkgname}"
-	cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX=/usr -S . -B ./build
+	cmake -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX=/usr -S . -B ./build
     cmake --build ./build --config Release --target hyprpolkitagent
 }
 
