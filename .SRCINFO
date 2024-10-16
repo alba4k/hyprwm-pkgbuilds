@@ -11,6 +11,7 @@ pkgbase = hyprpolkitagent-git
 	makedepends = gdb
 	depends = hyprutils-git
 	depends = polkit-qt6
+	depends = qqc2-desktop-style
 	provides = hyprpolkitagent
 	conflicts = hyprpolkitagent
 	source = hyprpolkitagent::git+https://github.com/hyprwm/hyprpolkitagent.git
