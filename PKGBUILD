@@ -2,12 +2,12 @@
 # Inspired by: FabioLolix, éclairevoyant, ThatOneCalculator <kainoa at t1c dot dev>
 
 pkgname=hyprland-protocols-git
-pkgver=0.3.0.r2.5a11232
+pkgver=0.4.0.r1.a7c1838
 pkgrel=1
 pkgdesc="Wayland protocol extensions for Hyprland"
 arch=(x86_64 aarch64)
 url="https://github.com/hyprwm/hyprland-protocols"
-license=(BSD)
+license=(BSD-3-Clause)
 # depends=(git)
 makedepends=(
 #   cmake
