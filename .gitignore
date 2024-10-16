@@ -1,3 +1,4 @@
-hyprsunset*
-pkg
-src
+/*
+!/.gitignore
+!/.SRCINFO
+!/PKGBUILD

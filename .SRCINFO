@@ -9,7 +9,7 @@ pkgbase = hyprsunset-git
 	makedepends = cmake
 	makedepends = gcc
 	makedepends = gdb
-	makedepends = hyprland-git
+	makedepends = hyprland-protocols-git
 	makedepends = hyprwayland-scanner-git>=0.4.0
 	depends = wayland
 	depends = hyprutils-git>=0.2.3
