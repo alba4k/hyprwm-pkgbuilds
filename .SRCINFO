@@ -1,6 +1,6 @@
 pkgbase = hyprsysteminfo-git
 	pkgdesc = A tiny qt6/qml application to display information about the running system
-	pkgver = 0.0.1.r11.154fadf
+	pkgver = 0.1.0.r0.g707a315c
 	pkgrel = 1
 	url = https://github.com/hyprwm/hyprsysteminfo
 	arch = any

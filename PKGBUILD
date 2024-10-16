@@ -2,7 +2,7 @@
 
 _pkgname="hyprsysteminfo"
 pkgname="${_pkgname}-git"
-pkgver=0.0.1.r11.154fadf
+pkgver=0.1.0.r0.g707a315c
 pkgrel=1
 pkgdesc="A tiny qt6/qml application to display information about the running system"
 arch=(any)
@@ -17,10 +17,8 @@ sha256sums=('SKIP')
 
 pkgver() {
 	cd ${_pkgname}
-    #git describe --long --tags --abbrev=8 --exclude='*[a-zA-Z][a-zA-Z]*' \
-    #  | sed -E 's/^[^0-9]*//;s/([^-]*-g)/r\1/;s/-/./g'
-
-	printf "0.0.1.r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+    git describe --long --tags --abbrev=8 --exclude='*[a-zA-Z][a-zA-Z]*' \
+      | sed -E 's/^[^0-9]*//;s/([^-]*-g)/r\1/;s/-/./g'
 }
 
 build() {
