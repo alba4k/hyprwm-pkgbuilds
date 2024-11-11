@@ -2,14 +2,14 @@
 
 _pkgname="hyprsunset"
 pkgname="${_pkgname}-git"
-pkgver=0.0.1.r8.f535c18
+pkgver=0.0.1.r9.adaae9d
 pkgrel=1
 pkgdesc="An application to enable a blue-light filter on Hyprland"
 arch=(any)
 url="https://github.com/hyprwm/hyprsunset"
 license=('BSD-3-Clause')
 depends=('wayland' 'hyprutils-git>=0.2.3' 'wayland-protocols')
-makedepends=('git' 'cmake' 'gcc' 'gdb' 'hyprland-protocols-git>=0.4.0' 'hyprwayland-scanner-git>=0.4.0')
+makedepends=('git' 'cmake' 'gcc' 'hyprland-protocols-git>=0.4.0' 'hyprwayland-scanner-git>=0.4.0')
 source=("${_pkgname}::git+https://github.com/hyprwm/hyprsunset.git")
 provides=("hyprsunset")
 conflicts=("hyprsunset")
