@@ -9,7 +9,7 @@ arch=(any)
 url="https://github.com/hyprwm/hyprsysteminfo"
 license=('BSD-3-Clause')
 depends=('hyprutils-git>=0.2.3' 'qqc2-desktop-style')
-makedepends=('git' 'cmake' 'gcc' 'gdb')
+makedepends=('git' 'cmake' 'gcc')
 source=("${_pkgname}::git+https://github.com/hyprwm/hyprsysteminfo.git")
 provides=("hyprsysteminfo")
 conflicts=("hyprsysteminfo")

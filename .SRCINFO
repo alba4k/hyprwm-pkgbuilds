@@ -8,7 +8,6 @@ pkgbase = hyprsysteminfo-git
 	makedepends = git
 	makedepends = cmake
 	makedepends = gcc
-	makedepends = gdb
 	depends = hyprutils-git>=0.2.3
 	depends = qqc2-desktop-style
 	provides = hyprsysteminfo
