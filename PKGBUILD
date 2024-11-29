@@ -4,7 +4,7 @@
 
 pkgname=hyprland-meta-git
 pkgver=0.0.1
-pkgrel=2
+pkgrel=3
 pkgdesc='Meta package to install Hyprland and all utilities'
 arch=(x86_64 aarch64)
 url='https://www.hyprland.org/'
