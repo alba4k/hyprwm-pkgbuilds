@@ -21,5 +21,5 @@ hyprcursor-git
 hyprsunset-git
 hyprpolkitagent-git
 hyprpicker-git
-xdg-desktop-portal-hyprland
+xdg-desktop-portal-hyprland-git
 )
