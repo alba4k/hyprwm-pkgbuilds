@@ -10,14 +10,12 @@ arch=(x86_64 aarch64)
 url='https://www.hyprland.org/'
 license=(BSD-3-Clause)
 depends=(
-hyprlang-git
-hyprland-protocols-git
-hyprwayland-scanner-git
 hyprland-git
 hypridle-git
-hyprcursor-git
 hyprsunset-git
 hyprpolkitagent-git
 hyprpicker-git
+hyprlock-git
+hyprpaper-git
 xdg-desktop-portal-hyprland-git
 )

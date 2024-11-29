@@ -6,15 +6,13 @@ pkgbase = hyprland-meta-git
 	arch = x86_64
 	arch = aarch64
 	license = BSD-3-Clause
-	depends = hyprlang-git
-	depends = hyprland-protocols-git
-	depends = hyprwayland-scanner-git
 	depends = hyprland-git
 	depends = hypridle-git
-	depends = hyprcursor-git
 	depends = hyprsunset-git
 	depends = hyprpolkitagent-git
 	depends = hyprpicker-git
+	depends = hyprlock-git
+	depends = hyprpaper-git
 	depends = xdg-desktop-portal-hyprland-git
 
 pkgname = hyprland-meta-git
