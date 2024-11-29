@@ -1,21 +1,23 @@
 # vim: set ts=2 sw=2 et:
 # Maintainer: AlexC <al3x.curl@gmail.com>
-# Contributor: alba4k
+# Contributor: alba4k <blaskoazzolaaaron@gmail.com>
 
 pkgname=hyprland-meta-git
 pkgver=0.0.1
-pkgrel=3
-pkgdesc='Meta package to install Hyprland and all utilities'
+pkgrel=4
+pkgdesc='Meta package to install Hyprland and all related utilities'
 arch=(x86_64 aarch64)
 url='https://www.hyprland.org/'
 license=(BSD-3-Clause)
 depends=(
-hyprland-git
 hypridle-git
-hyprsunset-git
-hyprpolkitagent-git
-hyprpicker-git
+hyprland-git
 hyprlock-git
 hyprpaper-git
+hyprpicker-git
+hyprpolkitagent-git
+hyprsunset-git
+hyprsysteminfo-git
 xdg-desktop-portal-hyprland-git
 )
+
