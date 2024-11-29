@@ -1,0 +1,23 @@
+pkgbase = hyprland-meta-git
+	pkgdesc = Meta package to install Hyprland and all utilities
+	pkgver = 0.0.1
+	pkgrel = 1
+	url = https://www.hyprland.org/
+	arch = x86_64
+	arch = aarch64
+	license = BSD-3-Clause
+	depends = aquamarine-git
+	depends = hyprlang-git
+	depends = hyprland-protocols-git
+	depends = hyprutils-git
+	depends = hyprgraphics-git
+	depends = hyprwayland-scanner-git
+	depends = hyprland-git
+	depends = hypridle-git
+	depends = hyprcursor-git
+	depends = hyprsunset-git
+	depends = hyprpolkitagent-git
+	depends = hyprpicker-git
+	depends = xdg-desktop-portal-hyprland
+
+pkgname = hyprland-meta-git
