@@ -5,11 +5,11 @@ pkgname="${_pkgname}-git"
 pkgver=0.0.1.r19.51561c0
 pkgrel=1
 pkgdesc=" Hyprland's welcome app, written in qt"
-arch=(any)
+arch=(x86_64 aarch64)
 url="https://github.com/hyprwm/hyprland-welcome"
 license=('BSD-3-Clause')
 depends=('qt6-base' 'qt6-wayland')
-makedepends=('git' 'cmake' 'gcc' 'gdb')
+makedepends=('git' 'cmake' 'gcc')
 source=("${_pkgname}::git+https://github.com/hyprwm/hyprland-welcome.git")
 provides=("hyprland-welcome")
 conflicts=("hyprland-welcome")
@@ -25,7 +25,7 @@ pkgver() {
 
 build() {
 	cd "${srcdir}/${_pkgname}"
-	cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX=/usr -S . -B ./build
+	cmake --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX=/usr -S . -B ./build
     cmake --build ./build --config Release --target HyprlandWelcome
 }
 
