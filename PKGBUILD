@@ -5,7 +5,7 @@ pkgname="${_pkgname}-git"
 pkgver=0.1.0.r0.g707a315c
 pkgrel=1
 pkgdesc="A tiny qt6/qml application to display information about the running system"
-arch=(any)
+arch=(x86_64 aarch64)
 url="https://github.com/hyprwm/hyprsysteminfo"
 license=('BSD-3-Clause')
 depends=('hyprutils-git>=0.2.3' 'qqc2-desktop-style')
@@ -23,7 +23,7 @@ pkgver() {
 
 build() {
 	cd "${srcdir}/${_pkgname}"
-	cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX=/usr -S . -B ./build
+	cmake --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX=/usr -S . -B ./build
     cmake --build ./build --config Release --target hyprsysteminfo
 }
 
