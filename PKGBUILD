@@ -5,7 +5,7 @@ pkgname="${_pkgname}-git"
 pkgver=0.1.1.r4.g615efd49
 pkgrel=1
 pkgdesc="A polkit authentication agent written in QT/QML"
-arch=(any)
+arch=(x86_64 aarch64)
 url="https://github.com/hyprwm/hyprpolkitagent"
 license=('BSD-3-Clause')
 depends=('hyprutils-git' 'polkit-qt6' 'qqc2-desktop-style')
@@ -23,7 +23,7 @@ pkgver() {
 
 build() {
 	cd "${srcdir}/${_pkgname}"
-	cmake -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX=/usr -S . -B ./build
+	cmake --no-warn-unused-cli -DCMAKE_INSTALL_LIBEXECDIR=/usr/lib -DCMAKE_INSTALL_PREFIX=/usr -S . -B ./build
     cmake --build ./build --config Release --target hyprpolkitagent
 }
 
