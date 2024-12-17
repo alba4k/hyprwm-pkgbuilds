@@ -1,3 +1,4 @@
-hypridle*
-pkg
-src
+/*
+!/.gitignore
+!/.SRCINFO
+!/PKGBUILD
