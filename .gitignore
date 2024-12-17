@@ -1,3 +1,4 @@
-hyprcursor*
-pkg
-src
+/*
+!/.gitignore
+!/.SRCINFO
+!/PKGBUILD
