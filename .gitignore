@@ -1,3 +1,4 @@
-hyprlang*
-pkg
-src
+/*
+!/.gitignore
+!/.SRCINFO
+!/PKGBUILD
