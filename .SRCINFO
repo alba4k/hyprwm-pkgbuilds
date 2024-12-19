@@ -18,7 +18,6 @@ pkgbase = hyprpaper-git
 	depends = hyprutils-git
 	provides = hyprpaper=0.7.3
 	conflicts = hyprpaper
-	backup = etc/hypr/hyprpaper.conf
 	source = hyprpaper::git+https://github.com/hyprwm/hyprpaper.git
 	sha256sums = SKIP
 
