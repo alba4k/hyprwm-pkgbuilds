@@ -11,6 +11,7 @@ pkgbase = hyprland-git
 	makedepends = git
 	makedepends = hyprwayland-scanner-git
 	makedepends = hyprland-protocols-git
+	makedepends = python
 	makedepends = xorgproto
 	depends = aquamarine-git
 	depends = cairo

@@ -62,6 +62,7 @@ makedepends=(
   hyprland-protocols-git
   #patch
   #pkgconf
+  python # required by udis86
   xorgproto
 )
 optdepends=(
