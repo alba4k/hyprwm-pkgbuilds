@@ -1,0 +1,36 @@
+# Maintainer: zjeffer
+# Maintainer: alba4k <blaskoazzolaaaron@gmail.com>
+
+_pkgname=hyprlang
+pkgname="${_pkgname}-git"
+pkgver=0.6.0.r3.g16e59c1e
+pkgrel=1
+pkgdesc="The official implementation library for the hypr config language"
+arch=(x86_64 aarch64)
+url="https://github.com/hyprwm/hyprlang"
+license=('LGPL-3.0-or-later')
+depends=('gcc-libs' 'glibc' 'hyprutils-git')
+makedepends=('git' 'cmake' 'pixman')
+source=("$_pkgname::git+$url.git")
+conflicts=("$_pkgname")
+provides=("$_pkgname=${pkgver%%.r*}" "lib$_pkgname.so")
+sha256sums=('SKIP')
+
+pkgver() {
+	cd "$_pkgname"
+	git describe --long --tags --abbrev=8 --exclude='*[a-zA-Z][a-zA-Z]*' \
+     | sed -E 's/^[^0-9]*//;s/([^-]*-g)/r\1/;s/-/./g'
+}
+
+build() {
+	cd "${srcdir}/${_pkgname}"
+	cmake --no-warn-unused-cli -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build
+	cmake --build ./build --config Release --target hyprlang
+}
+
+package() {
+	cd "${srcdir}/${_pkgname}"
+	DESTDIR="$pkgdir" cmake --install build
+
+	install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
+}
