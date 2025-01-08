@@ -8,7 +8,7 @@ pkgdesc="A tiny qt6/qml application to display information about the running sys
 arch=(x86_64 aarch64)
 url="https://github.com/hyprwm/hyprsysteminfo"
 license=('BSD-3-Clause')
-depends=('hyprutils-git>=0.2.3' 'qqc2-desktop-style')
+depends=('hyprutils-git>=0.2.3' 'hyprland-qt-support-git')
 makedepends=('git' 'cmake' 'gcc')
 source=("${_pkgname}::git+https://github.com/hyprwm/hyprsysteminfo.git")
 provides=("hyprsysteminfo")
