@@ -2,7 +2,7 @@
 
 _pkgname="hyprpolkitagent"
 pkgname="${_pkgname}-git"
-pkgver=0.1.1.r4.g615efd49
+pkgver=0.1.1.r12.g126a2299
 pkgrel=1
 pkgdesc="A polkit authentication agent written in QT/QML"
 arch=(x86_64 aarch64)
