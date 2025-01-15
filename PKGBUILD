@@ -2,7 +2,7 @@
 
 _pkgname="hyprlock"
 pkgname="${_pkgname}-git"
-pkgver=0.6.1.r8.gde844d39
+pkgver=0.6.1.r15.gea99dd55
 pkgrel=1
 pkgdesc="Hyprland's GPU-accelerated screen locking utility"
 arch=(x86_64 aarch64)
@@ -20,7 +20,7 @@ backup=('etc/pam.d/hyprlock')
 pick_mr() {
 	cd ${srcdir}/${_pkgname}
 
-	git pull origin pull/$1/head --no-edit
+	git pull origin pull/$1/head --no-edit --rebase
 }
 
 prepare() {
