@@ -2,7 +2,7 @@
 
 _pkgname="hypridle"
 pkgname="${_pkgname}-git"
-pkgver=0.1.1.r4.gdad6ac14
+pkgver=0.1.5.r4.g15ca902b
 pkgrel=1
 pkgdesc="Hyprland's idle daemon"
 arch=(x86_64 aarch64)
