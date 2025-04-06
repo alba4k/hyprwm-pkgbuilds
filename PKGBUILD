@@ -4,7 +4,7 @@
 # Contributor: ThatOneCalculator <kainoa at t1c dot dev>
 
 pkgname=hyprland-git
-pkgver=0.47.0.r6.gd2773d7a
+pkgver=0.48.0.r53.ge76f2776
 pkgrel=1
 pkgdesc="Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks"
 arch=(x86_64 aarch64)
@@ -126,6 +126,9 @@ package() {
   # licenses
   install -Dm0644 -t "$pkgdir/usr/share/licenses/${pkgname}" LICENSE
   install -Dm0644 subprojects/udis86/LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE-udis86"
+
+  # not sure it makes sense to keep this here instead of in xdph
+  rm -frv "$pkgdir/usr/share/xdg-desktop-portal"
 }
 # vi: et ts=2 sw=2
 
