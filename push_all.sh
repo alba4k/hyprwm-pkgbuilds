@@ -10,3 +10,4 @@ do
     ((updated++))
     echo -e "\e[32m  >>> Pushed $updated out of $count packages.\e[0m"
 done
+
