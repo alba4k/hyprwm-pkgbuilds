@@ -7,7 +7,7 @@ pkgver=r19.51561c0
 pkgrel=1
 pkgdesc="Hyprland's welcome app, written in qt"
 arch=('x86_64' 'aarch64')
-url="https://github.com/hyprwm/$_pkgname"
+url="https://github.com/hyprwm/hyprland-welcome"
 license=('BSD-3-Clause')
 depends=(
   qt6-base
@@ -22,15 +22,6 @@ source=("$_pkgsrc::git+$url.git")
 conflicts=("$_pkgname")
 provides=("$_pkgname=${pkgver%%.r*}")
 sha256sums=('SKIP')
-
-: '
-prepare() {
-	# Pick pull request form GitHub replacing NUM with the pr number
-	# e.g. git pull origin pull/111/head --no-edit --rebase
-
-	git pull origin pull/NUM/head --no-edit --rebase
-}
-'
 
 pkgver() {
   cd "$_pkgsrc"
