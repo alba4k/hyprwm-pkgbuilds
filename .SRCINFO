@@ -1,20 +1,20 @@
 pkgbase = hyprsunset-git
 	pkgdesc = An application to enable a blue-light filter on Hyprland
-	pkgver = 0.0.1.r9.adaae9d
+	pkgver = 0.2.0.r0.g7b7339f
 	pkgrel = 1
 	url = https://github.com/hyprwm/hyprsunset
 	arch = x86_64
 	arch = aarch64
 	license = BSD-3-Clause
-	makedepends = git
-	makedepends = cmake
-	makedepends = gcc
 	makedepends = hyprland-protocols-git>=0.4.0
 	makedepends = hyprwayland-scanner-git>=0.4.0
-	depends = wayland
+	makedepends = cmake
+	makedepends = git
+	makedepends = ninja
 	depends = hyprutils-git>=0.2.3
+	depends = wayland
 	depends = wayland-protocols
-	provides = hyprsunset
+	provides = hyprsunset=0.2.0
 	conflicts = hyprsunset
 	source = hyprsunset::git+https://github.com/hyprwm/hyprsunset.git
 	sha256sums = SKIP
