@@ -1,34 +1,37 @@
-# Maintainer: zjeffer
 # Maintainer: alba4k <blaskoazzolaaaron@gmail.com>
 
-_pkgname="hyprlang"
+_pkgname="PACKAGE"                           # CHANGE THIS
 _pkgsrc=$_pkgname
 pkgname="$_pkgname-git"
-pkgver=0.6.0.r10.g72df386
+pkgver=0.0.1
 pkgrel=1
-pkgdesc="The official implementation library for the hypr config language"
+pkgdesc="DESCRIPTION"                       # CHANGE THIS
 arch=('x86_64' 'aarch64')
-url="https://github.com/hyprwm/hyprlang"
-license=('LGPL-3.0-or-later')
+url="https://github.com/hyprwm/PACKAGE"     # # CHANGE THIS
+license=('BSD-3-Clause')
 depends=(                                   # CHANGE THIS
-  gcc-libs
-  glibc
-  hyprutils-git
+  DEPENDENCIES
 )
 makedepends=(                               # CHANGE THIS
   cmake
   git
   ninja
-  pixman
+  MAKEDEPENDENCIES
+)
+optdepends=(                                # CHANGE THIS
+  'OPTIONALDEPENDENCIES: abcde'
 )
 source=("$_pkgsrc::git+$url.git")
 conflicts=("$_pkgname")
-provides=("$_pkgname=${pkgver%%.r*}" "lib$_pkgname.so")
+provides=("$_pkgname=${pkgver%%.r*}")
 sha256sums=('SKIP')
 
 pkgver() {
   cd "$_pkgsrc"
-  git describe --long --tags --abbrev=7 | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
+  ( set -o pipefail                         # CHANGE THIS ONCE A TAGGED RELEASE COMES OUT
+    git describe --long --tags --abbrev=7 | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g' ||
+    printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short=7 HEAD)"
+  )
 }
 
 build() {
