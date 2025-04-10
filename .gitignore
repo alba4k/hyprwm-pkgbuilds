@@ -1,3 +1,4 @@
-aquamarine*
-pkg
-src
+/*
+!/.gitignore
+!/.SRCINFO
+!/PKGBUILD
