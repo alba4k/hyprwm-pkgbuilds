@@ -125,6 +125,6 @@ build() {
 
 package() {
   DESTDIR="$pkgdir" cmake --install build
-  install -Dm0644 "$srcdir/Hyprland/LICENSE" -t "$pkgdir/usr/share/licenses/${pkgname}/"
-  install -Dm0644 "$srcdir/Hyprland/subprojects/udis86/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE-udis86"
+  install -Dm0644 "$_pkgsrc/LICENSE" -t "$pkgdir/usr/share/licenses/${pkgname}/"
+  install -Dm0644 "$_pkgsrc/subprojects/udis86/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE-udis86"
 }
