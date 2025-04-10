@@ -10,14 +10,13 @@ arch=(any)
 url='https://www.hyprland.org/'
 license=(BSD-3-Clause)
 depends=(
-hypridle-git
-hyprland-git
-hyprlock-git
-hyprpaper-git
-hyprpicker-git
-hyprpolkitagent-git
-hyprsunset-git
-hyprsysteminfo-git
-xdg-desktop-portal-hyprland-git
+  hypridle-git
+  hyprland-git
+  hyprlock-git
+  hyprpaper-git
+  hyprpicker-git
+  hyprpolkitagent-git
+  hyprsunset-git
+  hyprsysteminfo-git
+  xdg-desktop-portal-hyprland-git
 )
-
