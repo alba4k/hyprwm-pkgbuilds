@@ -2,4 +2,4 @@
 !.gitignore
 !.SRCINFO
 !PKGBUILD
-!/PKGBUILD.template
+!PKGBUILD.template
