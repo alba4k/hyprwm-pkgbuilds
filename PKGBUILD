@@ -1,7 +1,6 @@
 # Maintainer: alba4k <blaskoazzolaaaron@gmail.com>
 
 _pkgname="hyprpolkitagent"
-_pkgsrc=$_pkgname
 pkgname="$_pkgname-git"
 pkgver=0.1.2.r3.g352638e
 pkgrel=1
@@ -9,6 +8,7 @@ pkgdesc="A polkit authentication agent written in QT/QML"
 arch=('x86_64' 'aarch64')
 url="https://github.com/hyprwm/hyprpolkitagent"
 license=('BSD-3-Clause')
+
 depends=(
   hyprland-qt-support-git
   hyprutils-git
@@ -19,9 +19,12 @@ makedepends=(
   git
   ninja
 )
-source=("$_pkgsrc::git+$url.git")
-conflicts=("$_pkgname")
+
 provides=("$_pkgname=${pkgver%%.r*}")
+conflicts=("$_pkgname")
+
+_pkgsrc=$_pkgname
+source=("$_pkgsrc::git+$url.git")
 sha256sums=('SKIP')
 
 pkgver() {
@@ -37,7 +40,7 @@ build() {
     -W no-dev
     -D CMAKE_BUILD_TYPE=None
     -D CMAKE_INSTALL_PREFIX=/usr
-	-D CMAKE_INSTALL_LIBEXECDIR=/usr/lib
+	-D CMAKE_INSTALL_LIBEXECDIR=lib
   )
   cmake "${cmake_options[@]}"
   cmake --build build
