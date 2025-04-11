@@ -1,7 +1,6 @@
 # Maintainer: alba4k <blaskoazzolaaaron@gmail.com>
 
 _pkgname="hyprland-welcome"
-_pkgsrc=$_pkgname
 pkgname="$_pkgname-git"
 pkgver=r19.51561c0
 pkgrel=1
@@ -9,6 +8,7 @@ pkgdesc="Hyprland's welcome app, written in qt"
 arch=('x86_64' 'aarch64')
 url="https://github.com/hyprwm/hyprland-welcome"
 license=('BSD-3-Clause')
+
 depends=(
   qt6-base
   qt6-wayland
@@ -18,9 +18,12 @@ makedepends=(
   git
   ninja
 )
-source=("$_pkgsrc::git+$url.git")
-conflicts=("$_pkgname")
+
 provides=("$_pkgname=${pkgver%%.r*}")
+conflicts=("$_pkgname")
+
+_pkgsrc=$_pkgname
+source=("$_pkgsrc::git+$url.git")
 sha256sums=('SKIP')
 
 pkgver() {

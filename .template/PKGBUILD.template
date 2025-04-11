@@ -1,14 +1,14 @@
 # Maintainer: alba4k <blaskoazzolaaaron@gmail.com>
 
 _pkgname="PACKAGE"                           # CHANGE THIS
-_pkgsrc=$_pkgname
 pkgname="$_pkgname-git"
 pkgver=0.0.1
 pkgrel=1
 pkgdesc="DESCRIPTION"                       # CHANGE THIS
 arch=('x86_64' 'aarch64')
-url="https://github.com/hyprwm/PACKAGE"     # # CHANGE THIS
+url="https://github.com/hyprwm/PACKAGE"     # CHANGE THIS
 license=('BSD-3-Clause')
+
 depends=(                                   # CHANGE THIS
   DEPENDENCIES
 )
@@ -21,9 +21,12 @@ makedepends=(                               # CHANGE THIS
 optdepends=(                                # CHANGE THIS
   'OPTIONALDEPENDENCIES: abcde'
 )
-source=("$_pkgsrc::git+$url.git")
-conflicts=("$_pkgname")
+
 provides=("$_pkgname=${pkgver%%.r*}")
+conflicts=("$_pkgname")
+
+_pkgsrc=$_pkgname
+source=("$_pkgsrc::git+$url.git")
 sha256sums=('SKIP')
 
 pkgver() {
