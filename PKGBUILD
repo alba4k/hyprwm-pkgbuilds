@@ -1,7 +1,6 @@
 # Maintainer: alba4k <blaskoazzolaaaron@gmail.com>
 
 _pkgname="hyprsunset"
-_pkgsrc=$_pkgname
 pkgname="$_pkgname-git"
 pkgver=0.2.0.r0.g7b7339f
 pkgrel=1
@@ -10,6 +9,7 @@ arch=('x86_64' 'aarch64')
 url="https://github.com/hyprwm/hyprsunset"
 license=('BSD-3-Clause')
 depends=(
+
   'hyprutils-git>=0.2.3'
   wayland
   wayland-protocols
@@ -21,9 +21,12 @@ makedepends=(
   git
   ninja
 )
-source=("$_pkgsrc::git+$url.git")
-conflicts=("$_pkgname")
+
 provides=("$_pkgname=${pkgver%%.r*}")
+conflicts=("$_pkgname")
+
+_pkgsrc=$_pkgname
+source=("$_pkgsrc::git+$url.git")
 sha256sums=('SKIP')
 
 pkgver() {
