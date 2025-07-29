@@ -11,6 +11,7 @@ pkgbase = hyprsunset-git
 	makedepends = cmake
 	makedepends = git
 	makedepends = ninja
+	depends = hyprlang
 	depends = hyprutils-git>=0.2.3
 	depends = wayland
 	depends = wayland-protocols
