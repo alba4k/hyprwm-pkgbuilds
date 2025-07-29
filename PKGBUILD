@@ -9,7 +9,7 @@ arch=('x86_64' 'aarch64')
 url="https://github.com/hyprwm/hyprsunset"
 license=('BSD-3-Clause')
 depends=(
-  hyprlang
+  hyprlang-git
   'hyprutils-git>=0.2.3'
   wayland
   wayland-protocols
