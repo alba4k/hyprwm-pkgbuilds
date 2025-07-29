@@ -2,7 +2,7 @@
 
 _pkgname="hyprsunset"
 pkgname="$_pkgname-git"
-pkgver=0.2.0.r0.g7b7339f
+pkgver=0.3.1.r0.g962f519
 pkgrel=1
 pkgdesc="An application to enable a blue-light filter on Hyprland"
 arch=('x86_64' 'aarch64')
