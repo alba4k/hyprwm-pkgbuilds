@@ -1,11 +1,11 @@
 # Maintainer: FabioLolix
 # Maintainer: éclairevoyant
-# Maintainer: alba4k <blaskoazzolaaaron@gmail.com>
+# Maintainer: alba4k <blaskoazzolaaaron[at]gmail.com>
 # Contributor: ThatOneCalculator <kainoa at t1c dot dev>
 
 _pkgname="hyprland"
 pkgname="$_pkgname-git"
-pkgver=0.48.0.r62.gd775686
+pkgver=0.50.0.r114.g0ed880f
 pkgrel=1
 pkgdesc="Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks"
 arch=('x86_64' 'aarch64')
