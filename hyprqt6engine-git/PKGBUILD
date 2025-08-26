@@ -1,18 +1,18 @@
 # Maintainer: alba4k <blaskoazzolaaaron[at]gmail.com>
 
-_pkgname="hyprpolkitagent"
+_pkgname="hyprqt6engine"
 pkgname="$_pkgname-git"
-pkgver=0.1.2.r3.g352638e
+pkgver=r2.e8a694d
 pkgrel=1
-pkgdesc="A polkit authentication agent written in QT/QML"
+pkgdesc="QT6 Theme Provider for Hyprland"
 arch=('x86_64' 'aarch64')
-url="https://github.com/hyprwm/hyprpolkitagent"
+url="https://github.com/hyprwm/hyprqt6engine"
 license=('BSD-3-Clause')
 
 depends=(
-  hyprland-qt-support-git
+  hyprlang-git
   hyprutils-git
-  polkit-qt6
+  qt6-base
 )
 makedepends=(
   cmake
@@ -29,7 +29,10 @@ sha256sums=('SKIP')
 
 pkgver() {
   cd "$_pkgsrc"
-  git describe --long --tags --abbrev=7 | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
+  ( set -o pipefail                         # CHANGE THIS ONCE A TAGGED RELEASE COMES OUT
+    git describe --long --tags --abbrev=7 | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g' ||
+    printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short=7 HEAD)"
+  )
 }
 
 build() {
@@ -40,7 +43,6 @@ build() {
     -W no-dev
     -D CMAKE_BUILD_TYPE=None
     -D CMAKE_INSTALL_PREFIX=/usr
-	-D CMAKE_INSTALL_LIBEXECDIR=lib
   )
   cmake "${cmake_options[@]}"
   cmake --build build

@@ -1,6 +1,6 @@
 # vim: set ts=2 sw=2 et:
 # Maintainer: AlexC <al3x.curl@gmail.com>
-# Contributor: alba4k <blaskoazzolaaaron@gmail.com>
+# Contributor: alba4k <blaskoazzolaaaron[at]gmail.com>
 
 pkgname=hyprland-meta-git
 pkgver=0.0.1
