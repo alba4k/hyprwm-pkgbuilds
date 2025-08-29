@@ -2,7 +2,7 @@
 
 _pkgname="hyprgraphics"
 pkgname="$_pkgname-git"
-pkgver=0.1.3.r0.g9d7f268
+pkgver=0.1.5.r2.g157cc52
 pkgrel=1
 pkgdesc="Hyprland graphics / resource utilities"
 arch=('x86_64' 'aarch64')
