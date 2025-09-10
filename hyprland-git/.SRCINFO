@@ -59,8 +59,9 @@ pkgbase = hyprland-git
 	depends = xorg-xwayland
 	optdepends = cmake: to build and install plugins using hyprpm
 	optdepends = cpio: to build and install plugins using hyprpm
-	optdepends = meson: to build and install plugins using hyprpm
 	optdepends = glaze: to build and install plugins using hyprpm
+	optdepends = hyprqt6engine-git: the recommended way to manage qt styles
+	optdepends = meson: to build and install plugins using hyprpm
 	optdepends = uwsm: the recommended way to start Hyprland
 	provides = hyprland=0.50.0
 	provides = wayland-compositor

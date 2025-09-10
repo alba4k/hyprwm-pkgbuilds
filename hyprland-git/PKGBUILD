@@ -72,8 +72,9 @@ makedepends=(
 optdepends=(
   'cmake: to build and install plugins using hyprpm'
   'cpio: to build and install plugins using hyprpm'
-  'meson: to build and install plugins using hyprpm'
   'glaze: to build and install plugins using hyprpm'
+  'hyprqt6engine-git: the recommended way to manage qt styles'
+  'meson: to build and install plugins using hyprpm'
   'uwsm: the recommended way to start Hyprland'
 )
 
