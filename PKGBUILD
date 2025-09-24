@@ -17,6 +17,7 @@ depends=(
   libjxl
   libpng
   libwebp
+  pango
   pixman
 )
 makedepends=(
