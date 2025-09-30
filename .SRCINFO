@@ -1,0 +1,22 @@
+pkgbase = hyprpwcenter-git
+	pkgdesc = A GUI Pipewire control center
+	pkgver = r10.ff4beb4
+	pkgrel = 1
+	url = https://github.com/hyprwm/hyprpwcenter
+	arch = x86_64
+	arch = aarch64
+	license = BSD-3-Clause
+	makedepends = cmake
+	makedepends = git
+	makedepends = ninja
+	depends = hyprtoolkit-git
+	depends = hyprutils-git
+	depends = libdrm
+	depends = libpipewire
+	depends = pixman
+	provides = hyprpwcenter=r10.ff4beb4
+	conflicts = hyprpwcenter
+	source = hyprpwcenter::git+https://github.com/hyprwm/hyprpwcenter.git
+	sha256sums = SKIP
+
+pkgname = hyprpwcenter-git
