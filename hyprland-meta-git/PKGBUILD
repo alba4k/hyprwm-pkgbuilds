@@ -16,6 +16,7 @@ depends=(
   hyprpaper-git
   hyprpicker-git
   hyprpolkitagent-git
+  hyprpwcenter-git
   hyprqt6engine-git
   hyprsunset-git
   hyprsysteminfo-git

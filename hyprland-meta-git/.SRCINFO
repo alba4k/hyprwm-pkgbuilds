@@ -11,6 +11,7 @@ pkgbase = hyprland-meta-git
 	depends = hyprpaper-git
 	depends = hyprpicker-git
 	depends = hyprpolkitagent-git
+	depends = hyprpwcenter-git
 	depends = hyprqt6engine-git
 	depends = hyprsunset-git
 	depends = hyprsysteminfo-git
