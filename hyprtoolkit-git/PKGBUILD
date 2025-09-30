@@ -2,7 +2,7 @@
 
 _pkgname="hyprtoolkit"
 pkgname="$_pkgname-git"
-pkgver=r93.8c86732
+pkgver=r97.f3e4245
 pkgrel=1
 pkgdesc="A modern C++ Wayland-native GUI toolkit"
 arch=('x86_64' 'aarch64')
@@ -10,7 +10,7 @@ url="https://github.com/hyprwm/hyprtoolkit"
 license=('BSD-3-Clause')
 
 depends=(
-    aquamarine
+    aquamarine-git
     egl-gbm
     hyprgraphics-git
     hyprlang-git
