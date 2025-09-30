@@ -14,6 +14,7 @@ pkgbase = hyprpwcenter-git
 	depends = libdrm
 	depends = libpipewire
 	depends = pixman
+	optdepends = ttf-material-symbols-variable-git: Recommended font for icons
 	provides = hyprpwcenter=r10.ff4beb4
 	conflicts = hyprpwcenter
 	source = hyprpwcenter::git+https://github.com/hyprwm/hyprpwcenter.git
