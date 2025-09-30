@@ -21,6 +21,9 @@ makedepends=(
   git
   ninja
 )
+optdepends=(
+    'ttf-material-symbols-variable-git: Recommended font for icons'
+)
 
 provides=("$_pkgname=${pkgver%%.r*}")
 conflicts=("$_pkgname")
