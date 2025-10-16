@@ -13,6 +13,7 @@ depends=(
   hypridle-git
   hyprland-git
   hyprlock-git
+  hyprlauncher-git
   hyprpaper-git
   hyprpicker-git
   hyprpolkitagent-git
