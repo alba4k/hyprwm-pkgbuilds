@@ -25,7 +25,7 @@ makedepends=(
   ninja
 )
 optdepends=(
-  'wl-copy: Copy certain search results to the clipboard'
+  'wl-clipboard: Copy certain search results to the clipboard'
 )
 
 provides=("$_pkgname=${pkgver%%.r*}")

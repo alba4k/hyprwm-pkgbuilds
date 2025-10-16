@@ -17,7 +17,7 @@ pkgbase = hyprlauncher-git
 	depends = libdrm
 	depends = libqalculate
 	depends = pixman
-	optdepends = wl-copy: Copy certain search results to the clipboard
+	optdepends = wl-clipboard: Copy certain search results to the clipboard
 	provides = hyprlauncher=0.1.0
 	conflicts = hyprlauncher
 	source = hyprlauncher::git+https://github.com/hyprwm/hyprlauncher.git
