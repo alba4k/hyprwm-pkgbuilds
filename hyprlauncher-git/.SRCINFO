@@ -1,0 +1,25 @@
+pkgbase = hyprlauncher-git
+	pkgdesc = multipurpose and versatile launcher / picker for Hyprland
+	pkgver = 0.1.0.r0.gd49288f
+	pkgrel = 1
+	url = https://github.com/hyprwm/hyprlauncher
+	arch = x86_64
+	arch = aarch64
+	license = BSD-3-Clause
+	makedepends = cmake
+	makedepends = git
+	makedepends = ninja
+	depends = hyprlang-git
+	depends = hyprtoolkit-git
+	depends = hyprutils-git
+	depends = hyprwire-git
+	depends = icu
+	depends = libdrm
+	depends = libqalculate
+	depends = pixman
+	provides = hyprlauncher=0.1.0
+	conflicts = hyprlauncher
+	source = hyprlauncher::git+https://github.com/hyprwm/hyprlauncher.git
+	sha256sums = SKIP
+
+pkgname = hyprlauncher-git
