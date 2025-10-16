@@ -24,6 +24,9 @@ makedepends=(
   git
   ninja
 )
+optdepends=(
+  'wl-copy: Copy certain search results to the clipboard'
+)
 
 provides=("$_pkgname=${pkgver%%.r*}")
 conflicts=("$_pkgname")
