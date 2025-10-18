@@ -10,6 +10,7 @@ pkgbase = hyprwire-git
 	makedepends = git
 	makedepends = ninja
 	depends = hyprutils-git
+	depends = pugixml
 	depends = libffi
 	provides = hyprwire=0.1.0
 	conflicts = hyprwire

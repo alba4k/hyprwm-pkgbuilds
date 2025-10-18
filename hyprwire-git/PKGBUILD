@@ -11,6 +11,7 @@ license=('BSD-3-Clause')
 
 depends=(
   hyprutils-git
+  pugixml
   libffi
 )
 makedepends=(
