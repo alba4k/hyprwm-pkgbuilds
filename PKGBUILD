@@ -12,9 +12,11 @@ license=('BSD-3-Clause')
 depends=(
     aquamarine-git
     egl-gbm
+    iniparser
     hyprgraphics-git
     hyprlang-git
     hyprutils-git
+    hyprwayland-scanner-git
     libdrm
     libxkbcommon
     pango
