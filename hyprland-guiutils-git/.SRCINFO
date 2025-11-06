@@ -1,0 +1,22 @@
+pkgbase = hyprland-guiutils-git
+	pkgdesc = Hyprland GUI utilities (successor to hyprland-qtutils)
+	pkgver = r4.cdaff7f
+	pkgrel = 1
+	url = https://github.com/hyprwm/hyprland-guiutils
+	arch = x86_64
+	arch = aarch64
+	license = BSD-3-Clause
+	makedepends = cmake
+	makedepends = git
+	makedepends = ninja
+	depends = hyprlang-git
+	depends = hyprtoolkit-git
+	depends = hyprutils-git
+	depends = libdrm
+	depends = pixman
+	provides = hyprland-guiutils=r4.cdaff7f
+	conflicts = hyprland-guiutils
+	source = hyprland-guiutils::git+https://github.com/hyprwm/hyprland-guiutils.git
+	sha256sums = SKIP
+
+pkgname = hyprland-guiutils-git
