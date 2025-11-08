@@ -2,7 +2,7 @@
 
 _pkgname="hyprland-guiutils"
 pkgname="$_pkgname-git"
-pkgver=r4.cdaff7f
+pkgver=0.1.0.r0.ga415eba
 pkgrel=1
 pkgdesc="Hyprland GUI utilities (successor to hyprland-qtutils)"
 arch=('x86_64' 'aarch64')
@@ -24,6 +24,7 @@ makedepends=(
 
 provides=("$_pkgname=${pkgver%%.r*}")
 conflicts=("$_pkgname")
+replaces=('hyprland-qtutils' 'hyprland-qtutils-git')
 
 _pkgsrc=$_pkgname
 source=("$_pkgsrc::git+$url.git")
