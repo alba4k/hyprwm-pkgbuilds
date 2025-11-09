@@ -8,6 +8,7 @@ pkgbase = hyprland-meta-git
 	depends = hypridle-git
 	depends = hyprland-git
 	depends = hyprlock-git
+	depends = hyprlauncher-git
 	depends = hyprpaper-git
 	depends = hyprpicker-git
 	depends = hyprpolkitagent-git
