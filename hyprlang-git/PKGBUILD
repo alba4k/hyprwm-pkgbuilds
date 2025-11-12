@@ -1,7 +1,7 @@
 # Maintainer: zjeffer
 # Maintainer: alba4k <blaskoazzolaaaron[at]gmail.com>
 
-_pkgname="hyprlang"
+_pkgname=""
 pkgname="$_pkgname-git"
 pkgver=0.6.0.r10.g72df386
 pkgrel=1
