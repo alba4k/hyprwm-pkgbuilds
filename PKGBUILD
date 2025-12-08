@@ -12,9 +12,8 @@ url="https://github.com/hyprwm/hyprland-protocols"
 license=('BSD-3-Clause')
 
 makedepends=(
-  meson
   git
-  ninja
+  cmake
 )
 
 provides=("$_pkgname=${pkgver%%.r*}")
@@ -30,17 +29,19 @@ pkgver() {
 }
 
 build() {
-  cd $_pkgsrc
-
-  meson setup build \
-    --prefix=/usr \
-    --libexecdir=lib \
-    --buildtype=plain
-
-  meson compile -C build
+  local cmake_options=(
+    -B build
+    -S "$_pkgsrc"
+    -W no-dev
+    -D CMAKE_BUILD_TYPE=None
+    -D CMAKE_INSTALL_PREFIX=/usr
+    -D CMAKE_INSTALL_LIBEXECDIR=lib
+  )
+  cmake "${cmake_options[@]}"
+  cmake --build build
 }
 
 package() {
-  meson install -C "$_pkgsrc/build" --destdir "$pkgdir"
+  DESTDIR="$pkgdir" cmake --install build
   install -Dm644 "$_pkgsrc/LICENSE" -t "$pkgdir/usr/share/licenses/$pkgname/"
 }
