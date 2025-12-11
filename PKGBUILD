@@ -1,9 +1,9 @@
 # Maintainer: zjeffer
 # Maintainer: alba4k <blaskoazzolaaaron[at]gmail.com>
 
-_pkgname=""
+_pkgname="hyprlang"
 pkgname="$_pkgname-git"
-pkgver=0.6.0.r10.g72df386
+pkgver=0.6.7.r0.g0d00dc1
 pkgrel=1
 pkgdesc="The official implementation library for the hypr config language"
 arch=('x86_64' 'aarch64')
