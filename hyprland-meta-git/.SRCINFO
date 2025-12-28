@@ -1,7 +1,7 @@
 pkgbase = hyprland-meta-git
 	pkgdesc = Meta package to install Hyprland and all related utilities
 	pkgver = 0.0.1
-	pkgrel = 5
+	pkgrel = 6
 	url = https://www.hyprland.org/
 	arch = any
 	license = BSD-3-Clause
@@ -14,6 +14,7 @@ pkgbase = hyprland-meta-git
 	depends = hyprpolkitagent-git
 	depends = hyprpwcenter-git
 	depends = hyprqt6engine-git
+	depends = hyprshutdown-git
 	depends = hyprsunset-git
 	depends = hyprsysteminfo-git
 	depends = xdg-desktop-portal-hyprland-git
