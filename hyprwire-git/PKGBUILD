@@ -2,7 +2,7 @@
 
 _pkgname="hyprwire"
 pkgname="$_pkgname-git"
-pkgver=0.1.0.r0.g6a2a10b
+pkgver=0.3.0.r16.g62cd80b
 pkgrel=1
 pkgdesc="A fast and consistent wire protocol for IPC"
 arch=('x86_64' 'aarch64')
@@ -15,6 +15,7 @@ depends=(
   libffi
 )
 makedepends=(
+  gtest
   cmake
   git
   ninja
