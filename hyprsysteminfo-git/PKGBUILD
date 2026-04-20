@@ -2,7 +2,7 @@
 
 _pkgname="hyprsysteminfo"
 pkgname="$_pkgname-git"
-pkgver=0.1.3.r6.g1959f04
+pkgver=0.1.3.r10.gc3a8f50
 pkgrel=1
 pkgdesc="A tiny qt6/qml application to display information about the running system"
 arch=('x86_64' 'aarch64')
@@ -11,8 +11,9 @@ license=('BSD-3-Clause')
 
 depends=(
   glaze
-  hyprland-qt-support-git
+  hyprtoolkit-git
   hyprutils-git
+  pciutils
 )
 makedepends=(
   cmake
