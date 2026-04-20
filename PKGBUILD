@@ -15,9 +15,9 @@ depends=(
   libffi
 )
 makedepends=(
-  gtest
   cmake
   git
+  gtest
   ninja
 )
 
