@@ -5,7 +5,7 @@
 
 _pkgname="hyprland"
 pkgname="$_pkgname-git"
-pkgver=0.54.0.r252.g80763b1
+pkgver=0.55.0.r54.g51d2bb9
 pkgrel=1
 pkgdesc="Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks"
 arch=('x86_64' 'aarch64')
@@ -86,12 +86,8 @@ conflicts=("$_pkgname")
 provides=("$_pkgname=${pkgver%%.r*}" "wayland-compositor")
 
 _pkgsrc=$_pkgname
-source=(
-  "$_pkgsrc::git+$url.git"
-)
-sha256sums=(
-  'SKIP'
-)
+source=("$_pkgsrc::git+$url.git")
+sha256sums=('SKIP')
 
 backup=("usr/share/xdg-desktop-portal/hyprland-portals.conf")
 
@@ -99,6 +95,7 @@ prepare() {
   cd "$_pkgsrc"
   git submodule init
   git config submodule.subprojects/tracy.update none
+  git config submodule.subprojects/hyprland-protocols.update none
   git submodule update
 }
 
