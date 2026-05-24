@@ -1,6 +1,6 @@
 pkgbase = hyprpwcenter-git
 	pkgdesc = A GUI Pipewire control center
-	pkgver = r10.ff4beb4
+	pkgver = 0.1.2.r10.gfd4fd52
 	pkgrel = 1
 	url = https://github.com/hyprwm/hyprpwcenter
 	arch = x86_64
@@ -15,7 +15,7 @@ pkgbase = hyprpwcenter-git
 	depends = libpipewire
 	depends = pixman
 	optdepends = ttf-material-symbols-variable-git: Recommended font for icons
-	provides = hyprpwcenter=r10.ff4beb4
+	provides = hyprpwcenter=0.1.2
 	conflicts = hyprpwcenter
 	source = hyprpwcenter::git+https://github.com/hyprwm/hyprpwcenter.git
 	sha256sums = SKIP
