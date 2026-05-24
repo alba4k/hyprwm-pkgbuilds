@@ -8,6 +8,5 @@ for package in $packages
 do
     aurpublish $package
     ((updated++))
-    echo -e "\e[32m  >>> Pushed $updated out of $count packages.\e[0m"
+    echo -e "\e[32m  >>> Pushed $package, $updated out of $count packages.\e[0m"
 done
-
