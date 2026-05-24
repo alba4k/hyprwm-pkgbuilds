@@ -2,7 +2,7 @@
 
 _pkgname="hyprsunset"
 pkgname="$_pkgname-git"
-pkgver=0.3.1.r0.g962f519
+pkgver=0.3.3.r12.g2ccd008
 pkgrel=1
 pkgdesc="An application to enable a blue-light filter on Hyprland"
 arch=('x86_64' 'aarch64')
@@ -31,7 +31,8 @@ sha256sums=('SKIP')
 
 pkgver() {
   cd "$_pkgsrc"
-  git describe --long --tags --abbrev=7 | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
+  local _tag=$(git tag -l --contains $(git describe --tags --abbrev=0) --sort=-v:refname | head -n1 | sed 's/^v//')
+  printf "%s.r%s.g%s" "$_tag" $(git rev-list --count --cherry-pick "v${_tag}...HEAD") $(git rev-parse --short=7 HEAD)
 }
 
 build() {

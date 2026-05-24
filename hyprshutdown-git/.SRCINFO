@@ -1,6 +1,6 @@
 pkgbase = hyprshutdown-git
 	pkgdesc = A graceful shutdown utility for Hyprland
-	pkgver = r13.e013cf2
+	pkgver = 0.1.1.r0.gdb1f38b
 	pkgrel = 1
 	url = https://github.com/hyprwm/hyprshutdown
 	arch = x86_64
@@ -14,7 +14,7 @@ pkgbase = hyprshutdown-git
 	depends = hyprutils-git
 	depends = pixman
 	depends = libdrm
-	provides = hyprshutdown=r13.e013cf2
+	provides = hyprshutdown=0.1.1
 	conflicts = hyprshutdown
 	source = hyprshutdown::git+https://github.com/hyprwm/hyprshutdown.git
 	sha256sums = SKIP

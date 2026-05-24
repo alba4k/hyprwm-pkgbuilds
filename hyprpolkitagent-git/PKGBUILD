@@ -2,7 +2,7 @@
 
 _pkgname="hyprpolkitagent"
 pkgname="$_pkgname-git"
-pkgver=0.1.2.r3.g352638e
+pkgver=0.1.3.r4.g713b7ea
 pkgrel=1
 pkgdesc="A polkit authentication agent written in QT/QML"
 arch=('x86_64' 'aarch64')
@@ -29,7 +29,8 @@ sha256sums=('SKIP')
 
 pkgver() {
   cd "$_pkgsrc"
-  git describe --long --tags --abbrev=7 | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
+  local _tag=$(git tag -l --contains $(git describe --tags --abbrev=0) --sort=-v:refname | head -n1 | sed 's/^v//')
+  printf "%s.r%s.g%s" "$_tag" $(git rev-list --count --cherry-pick "v${_tag}...HEAD") $(git rev-parse --short=7 HEAD)
 }
 
 build() {

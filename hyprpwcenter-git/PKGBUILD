@@ -2,7 +2,7 @@
 
 _pkgname="hyprpwcenter"
 pkgname="$_pkgname-git"
-pkgver=r10.ff4beb4
+pkgver=0.1.2.r10.gfd4fd52
 pkgrel=1
 pkgdesc="A GUI Pipewire control center"
 arch=('x86_64' 'aarch64')
@@ -10,11 +10,11 @@ url="https://github.com/hyprwm/hyprpwcenter"
 license=('BSD-3-Clause')
 
 depends=(
-    hyprtoolkit-git
-    hyprutils-git
-    libdrm
-    libpipewire
-    pixman
+  hyprtoolkit-git
+  hyprutils-git
+  libdrm
+  libpipewire
+  pixman
 )
 makedepends=(
   cmake
@@ -34,7 +34,8 @@ sha256sums=('SKIP')
 
 pkgver() {
   cd "$_pkgsrc"
-  git describe --long --tags --abbrev=7 | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
+  local _tag=$(git tag -l --contains $(git describe --tags --abbrev=0) --sort=-v:refname | head -n1 | sed 's/^v//')
+  printf "%s.r%s.g%s" "$_tag" $(git rev-list --count --cherry-pick "v${_tag}...HEAD") $(git rev-parse --short=7 HEAD)
 }
 
 build() {
