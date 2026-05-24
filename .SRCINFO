@@ -1,6 +1,6 @@
 pkgbase = hyprlauncher-git
 	pkgdesc = multipurpose and versatile launcher / picker for Hyprland
-	pkgver = 0.1.0.r0.gd49288f
+	pkgver = 0.1.6.r0.gc682906
 	pkgrel = 1
 	url = https://github.com/hyprwm/hyprlauncher
 	arch = x86_64
@@ -18,7 +18,7 @@ pkgbase = hyprlauncher-git
 	depends = libqalculate
 	depends = pixman
 	optdepends = wl-clipboard: Copy certain search results to the clipboard
-	provides = hyprlauncher=0.1.0
+	provides = hyprlauncher=0.1.6
 	conflicts = hyprlauncher
 	source = hyprlauncher::git+https://github.com/hyprwm/hyprlauncher.git
 	sha256sums = SKIP
