@@ -13,13 +13,13 @@ depends=(
   cairo
   file
   hyprutils-git
-  libgl
-  libheif
-  libjpeg
-  libjxl
-  libpng
-  librsvg
-  libwebp
+  libGL.so
+  libheif.so
+  libjpeg.so
+  libjxl.so
+  libpng16.so
+  librsvg-2.so
+  libwebp.so
   pango
   pixman
 )
