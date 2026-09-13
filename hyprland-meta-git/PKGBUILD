@@ -4,7 +4,7 @@
 
 pkgname=hyprland-meta-git
 pkgver=0.0.1
-pkgrel=6
+pkgrel=7
 pkgdesc='Meta package to install Hyprland and all related utilities'
 arch=(any)
 url='https://www.hyprland.org/'
@@ -16,6 +16,7 @@ depends=(
   hyprlauncher-git
   hyprpaper-git
   hyprpicker-git
+  hyprpm-git
   hyprpolkitagent-git
   hyprpwcenter-git
   hyprqt6engine-git
